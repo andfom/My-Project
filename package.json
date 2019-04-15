@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack-cli --watch",
-    "lint": "eslint ./blocks/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -39,8 +38,5 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
-  },
-  "pre-commit": [
-    "lint"
-  ]
+  }
 }
