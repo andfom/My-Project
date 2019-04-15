@@ -1,6 +1,6 @@
 module.exports = {
-    entry: './blocks/textbox/textbox.js',
+    entry: './blocks/index.js',
     output: {
-        filename: 'bundle.js'
+        filename: 'toolkit.js'
     },
 };

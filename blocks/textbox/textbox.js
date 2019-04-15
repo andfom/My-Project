@@ -1,11 +1,5 @@
-(function () {
- 'use strict';
+import { Block } from '../block';
 
-    const Block = window.Block;   
-
-    class Textbox extends Block{
-        
-    }
-
-    window.Textbox = Textbox;
-  })();
+export class Textbox extends Block {
+    
+}
