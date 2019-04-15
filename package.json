@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack-cli --watch",
-    "lint": "eslint ./blocks/**/*.js",
+    "lint": "eslint ./blocks/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

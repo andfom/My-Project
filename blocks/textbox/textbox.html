@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blocks: Textbox</title>
-    <script src="../block.js"></script>
-    <script src="textbox.js"></script>
+    <script src="../../dist/toolkit.js"></script>
     <link rel="stylesheet" href="textbox.css">
 </head>
 <body>
+
+    <div class="js-textbox"></div>
+    <div class="js-textbox-disabled"></div>
+    
     <script>
         (function () {
           'use strict';
            console.log(Textbox);
 
-           const textbox = new Textbox();
-           textbox.render({test: 1234});
+           const textbox = new Textbox(document.querySelector('.js-textbox'), {
+                label: 'Пример активного текстбокса',
+                value: 'Hello World'
+           });
+           const textbox2 = new Textbox(document.querySelector('.js-textbox-disabled'), {
+                label: 'Пример не активного текстбокса',
+                value: 'Hello World',
+                mod: ['disabled']
+           });
+           textbox.render();
+           textbox2.render();
         })();
     </script>
 </body>
