@@ -18,17 +18,20 @@
           'use strict';
            console.log(Textbox);
 
-           const textbox = new Textbox(document.querySelector('.js-textbox'), {
+           const textbox = new Textbox({
+                name: 'test',
                 label: 'Пример активного текстбокса',
-                value: 'Hello World'
+                value: 'Hello World',
+                required: true
            });
-           const textbox2 = new Textbox(document.querySelector('.js-textbox-disabled'), {
-                label: 'Пример не активного текстбокса',
+           const textbox2 = new Textbox({
+                name: 'test2',
+                label: 'Пример активного текстбокса',
                 value: 'Hello World',
                 mod: ['disabled']
            });
-           textbox.render();
-           textbox2.render();
+           textbox.render(document.querySelector('.js-textbox'));
+           textbox2.render(document.querySelector('.js-textbox-disabled'));
         })();
     </script>
 </body>
