@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Список контактов</title>
+    <script src="../../../dist/contacts.js"></script>
+    <link rel="stylesheet" href="../../../libs/purecss.min.css">
+</head>
+<body>
+
+    <div class="js-pagination"></div>
+    
+    <script>
+        (function () {
+          'use strict';
+     
+          const pagination = new Pagination();
+          pagination.render(document.querySelector('.js-pagination'));
+        })();
+    </script>
+</body>
+</html>
